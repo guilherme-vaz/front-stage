@@ -1,4 +1,4 @@
-# Gestão de Áreas e Processos
+# Gestão de Áreas e Processos - Frontend
 
 Este é um sistema para gerenciar áreas e processos, permitindo adicionar subprocessos, responsáveis, ferramentas e documentação. A aplicação é construída com React e utiliza TypeScript.
 
@@ -12,20 +12,20 @@ Este é um sistema para gerenciar áreas e processos, permitindo adicionar subpr
 1. Clone o repositório:
 
     ```bash
-    git clone <URL_DO_REPOSITORIO>
-    cd <NOME_DA_PASTA_DO_PROJETO>
+    $ git clone <URL_DO_REPOSITORIO>
+    $ cd <NOME_DA_PASTA_DO_PROJETO>
     ```
 
 2. Instale as dependências:
 
     ```bash
-    npm install
+    $ npm install
     ```
 
 3. Inicie o servidor de desenvolvimento:
 
     ```bash
-    npm run dev
+    $ npm run dev
     ```
 
 4. Abra o navegador e acesse `http://localhost:3000` para visualizar a aplicação.
