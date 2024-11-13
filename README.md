@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# Gestão de Áreas e Processos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um sistema para gerenciar áreas e processos, permitindo adicionar subprocessos, responsáveis, ferramentas e documentação. A aplicação é construída com React e utiliza TypeScript.
 
-Currently, two official plugins are available:
+## Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js (versão 14 ou superior)
+- npm ou yarn
 
-## Expanding the ESLint configuration
+## Passos para Rodar o Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone o repositório:
 
-- Configure the top-level `parserOptions` property like this:
+    ```bash
+    git clone <URL_DO_REPOSITORIO>
+    cd <NOME_DA_PASTA_DO_PROJETO>
+    ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. Instale as dependências:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+    ```bash
+    npm install
+    ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3. Inicie o servidor de desenvolvimento:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+    ```bash
+    npm run dev
+    ```
+
+4. Abra o navegador e acesse `http://localhost:3000` para visualizar a aplicação.
+
+## Funcionalidades
+
+- Adicionar novas áreas e processos
+- Adicionar subprocessos a processos existentes
+- Associar ferramentas, responsáveis e documentação a processos
+- Interface amigável e intuitiva
+
+## Estrutura do Projeto
+
+- **components/**: Contém os componentes reutilizáveis da interface, como o formulário de processos e subprocessos.
+- **context/**: Inclui o contexto global usado para gerenciar o estado das áreas e processos.
+- **interfaces/**: Define as interfaces TypeScript para padronizar os dados do projeto.
+
+## Tecnologias Utilizadas
+
+- React
+- TypeScript
+- Styled Components para estilização
+
+## Contribuição
+
+Se deseja contribuir com o projeto, sinta-se à vontade para abrir uma issue ou um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT.
+
