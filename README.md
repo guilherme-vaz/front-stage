@@ -49,11 +49,5 @@ Este é um sistema para gerenciar áreas e processos, permitindo adicionar subpr
 - TypeScript
 - Styled Components para estilização
 
-## Contribuição
 
-Se deseja contribuir com o projeto, sinta-se à vontade para abrir uma issue ou um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT.
 
