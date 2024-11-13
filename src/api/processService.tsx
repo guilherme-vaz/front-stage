@@ -1,11 +1,11 @@
-import { Area } from "../interfaces/Area"
+import { IProcess } from "../interfaces/Process"
 import { api } from "./api"
 
 
-export async function getAreas() {
-    return await api.get("")
+export async function getProcess() {
+    return await api.get("/processes")
 }
 
-export async function createArea(data: Area) {
-    return await api.post("url", data)
+export async function createProcess(data: IProcess) {
+    return await api.post("/processes", data)
 }

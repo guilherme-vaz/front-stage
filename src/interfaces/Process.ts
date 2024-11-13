@@ -1,7 +1,11 @@
-export interface Process {
-    id: number;
-    name: string;
-    tools?: string[];
-    responsible?: string[];
-    areaId: number;  
-  }
+import { ISubProcess } from "./SubProcess";
+
+export interface IProcess {
+  id: number;
+  name: string;
+  details: string;
+  tools: string[];
+  responsible: string[];
+  documentation: string[];
+  subProcesses: ISubProcess[];
+}

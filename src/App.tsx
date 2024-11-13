@@ -1,12 +1,17 @@
-import './App.css'
+import React from 'react';
+import AreaList from './components/areaList/AreaList';
+import { GlobalStyle, AppContainer, Title } from './appStyle';
 
-function App() {
-
+const App: React.FC = () => {
   return (
     <>
-      <h1>Teste</h1>
+      <GlobalStyle />
+      <AppContainer>
+        <Title>Gestão de Áreas e Processos</Title>
+        <AreaList />
+      </AppContainer>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -1,5 +1,7 @@
-export interface Area {
-    id: number;
-    name: string;
-    description?: string;
-  }
+import {IProcess } from "./Process";
+
+export interface IArea {
+  id: number;
+  name: string;
+  processes: IProcess[];
+}
